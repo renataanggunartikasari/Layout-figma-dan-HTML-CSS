@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Layout</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>contact</title>
+    <link rel="stylesheet" href="stylecontact.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,34 +17,26 @@
       <div class="navbar">
         <div class="logo">Freelenco</div>
         <ul>
-          <li><a href="">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="">Pricing</a></li>
           <li><a href="">Service</a></li>
           <li><a href="">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-
+          <li><a href="">Contact</a></li>
         </ul>
       </div>
     </header>
-
     <main>
-      <div class="landing-text">
-        <h4 style="font-size: 24px">Halo Selamat Datang!</h4>
-        <h1 style="font-size: 42px; font-weight: bold">
-          Temukan Pekerjaan <br /> 
-          Freelance Impianmu
-        </h1>
-        <p style="font-size: 18px">
-          Bekerjalah ditempat yang membuatmu nyaman.<br />
-          Daftar sekarang gratis
-        </p>
-        <button>Daftar</button>
+      <div class="box-form">
+        <form action="/contact.html">
+          <label for="fname">Nama Lengkap:</label><br />
+          <input type="text" id="fname" name="fname" value="" /><br />
+          <label for="lname">Email:</label><br />
+          <input type="text" id="lname" name="lname" value="" /><br />
+          <label for="lname">Password:</label><br />
+          <input type="password" id="lname" name="lname" value="" /><br />
+          <input class="button" type="submit" value="Submit" />
+        </form>
       </div>
-      <img
-        src="image-removebg-preview (18).png"
-        alt="astronot kartun"
-        width="400"
-      />
     </main>
     <footer style="position: fixed; bottom: 0">&copymencarikerja 2023</footer>
   </body>
