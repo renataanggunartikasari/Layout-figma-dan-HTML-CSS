@@ -34,7 +34,7 @@ td {
   text-align: center;
   margin: 0 auto;
 }
-table tr:hover td {
+table td:hover {
   background-color: gray;
 }
 td {
@@ -46,6 +46,23 @@ th {
   background-color: green;
   color: white;
 }
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  font-size: 13px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .logo {
   font-size: 24px;
   font-weight: bold;
