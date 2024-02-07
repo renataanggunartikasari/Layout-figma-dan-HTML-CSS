@@ -16,11 +16,21 @@
     <header>
       <div class="navbar">
         <div class="logo">Freelenco</div>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="jobs.html">Jobs</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <div id="hamburger" style="font-size: 30px;">=</div>
+        <ul id="menu" class="hidden">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="jobs.html" class="dropbtn">Jobs</a>
+            <div class="dropdown-contentt">
+              <a href="#">Copywriter</a>
+              <a href="#">Graphic Disigner</a>
+              <a href="#">Data Entry</a>
+              <a href="#">Contact Creator</a>
+              <a href="#">Social Media Officer</a>
+            </div>
+            <li><a href="">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </li>
         </ul>
       </div>
     </header>
@@ -45,5 +55,13 @@
       />
     </main>
     <footer style="position: fixed; bottom: 0">&copymencarikerja 2023</footer>
+    <script>
+      const Hamburger = document.getElementById('hamburger')
+      const Menu = document.getElementById('menu')
+
+      Hamburger.addEventListener('click', () => {
+        Menu.classList.toggle('hidden')
+      })
+    </script>
   </body>
 </html>
